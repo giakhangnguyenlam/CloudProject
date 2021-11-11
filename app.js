@@ -7,8 +7,10 @@ var cors = require('cors')
 require('./config/DBConnection');
 const port = 3000;
 
-var indexRouter = require('./routes/index');
 
+var indexRouter = require('./routes/index');
+var studentRouter = require('./routes/studentRoutes');
+var subjectRouter = require('./routes/subjectRoutes');
 
 var app = express();
 
@@ -25,6 +27,8 @@ app.use(cors());
 
 
 app.use('/', indexRouter);
+app.use('/student', studentRouter);
+app.use('/subject', subjectRouter);
 
 
 // catch 404 and forward to error handler

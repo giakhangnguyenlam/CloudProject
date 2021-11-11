@@ -9,10 +9,10 @@ var SubjectSchema = new Schema({
     type: String,
     number: Number,
     teacherName: String,
-    studentId: {
+    studentId: [{
         type: Schema.Types.Number,
         ref: 'StudentSchema'
-    }
+    }]
 })
 
 autoIncrement.initialize(mongoose.connection);
