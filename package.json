@@ -15,5 +15,8 @@
     "morgan": "~1.9.1",
     "mongoose": "^6.0.8",
     "mongoose-auto-increment": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
